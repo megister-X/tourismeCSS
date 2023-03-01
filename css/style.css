@@ -114,8 +114,8 @@ nav ul li a{
 
 header{
 	width: 100%;
-	height: 250px;
-	background-color: sandybrown;
+	min-height: 250px;
+
 }
 .logo{
 	height: 150px;
@@ -137,7 +137,9 @@ h1{
 	text-shadow: 0px 0px 2px hsl(200,100%,50%);
 }
 .text-accueil{
-
+	width: 100%;
+	margin: 12px 0;
+	background-color: sienna;
 }
 
 
@@ -145,15 +147,6 @@ h1{
 main{
 	width: 100%;
 	min-height: 600px;
-
-	background-image: url("../images/main-banner.jpg");
-	backdrop-filter: ;
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center center;
-	background-clip: border-box;
-	background-repeat: no-repeat;
-	background-blend-mode: color-burn;
 }
 main section{
 	width: 100%;
@@ -174,7 +167,7 @@ main section{
 
 .tricar article h2{
 	text-align: center;
-	line-height: 75px;
+	line-height: 40px;
 	 text-decoration-line: overline;
 	 text-decoration-style: wavy;
 	 text-transform: capitalize;
@@ -264,6 +257,15 @@ q:lang(no) {
 footer{
 	width: 100%;
 	height: 250px;
+
+	background-image: url("../images/main-banner.jpg");
+	backdrop-filter: ;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center center;
+	background-clip: border-box;
+	background-repeat: no-repeat;
+	background-blend-mode: color-burn;
 }
 
 
