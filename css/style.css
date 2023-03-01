@@ -339,6 +339,7 @@ main.blog{
 
 main.blog aside{
 	width: 20%;
+	box-shadow: inset 0 0 1px 0.2px black;
 }
 
 main.blog section{
@@ -346,44 +347,56 @@ main.blog section{
 }
 
 .deroulant{
+	width: 100%;
   position: relative;
   display: inline-block;
-  margin-inline: auto;
+ margin: 10% 10% 0;
+ /*  transform: translateX(-25%);*/
 }
 
-.deroulant--bouton{
-  background-color: #4CAF50;
+button.deroulant--bouton{
+  background-color: #4C42f2;
   color: white;
+  width: 80%;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
 
-.cat--container {
+menu.cat--container {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  width: 80%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .cat--container a {
   color: black;
-  padding: 12px 16px;
-  text-decoration: none;
+  padding-block: 12px 16px;
   display: block;
+  
 }
 
-.cat--container a:hover {background-color: #f1f1f1}
+.cat--container a:hover {
+	background-color: whitesmoke;
+	box-shadow: 0 0 1px 0.2px black;
+	margin-bottom: 2px;
+	color: #4C42f2;
+	width: 100%;
+}
 
-.deroulant:hover .cat--container{
+.deroulant:hover menu.cat--container{
   display: block;
+  text-align: center;
+  box-shadow: 0 0 1px 0.2px black;
 }
 
 .deroulant:hover .deroulant--bouton {
-  background-color: #3e8e41;
+  background-color: whitesmoke;
+  color: #4C42f2;
 }
 
 
