@@ -224,7 +224,39 @@ p::selection {
 q:lang(no) {
   quotes: "*" "*";
 }
+/*--------------------*/
 
+/*   Partenaires */
+.text-logo{
+	min-height: 220px;
+	background-color: thistle;
+}
+.text-log__cont{
+	width: 100%;
+	justify-content: space-around;
+}
+.text-log__cont--01{
+	justify-content: space-between;
+	box-shadow: 0px 0px 2px 1px black;
+	width: 30%;
+	height: 150px;
+}
+.text-log__cont--01 figure{
+	width: 30%;
+}
+.text-log__cont--01 div{
+	width: 70%;
+}
+
+.text-log__cont--01 div p,
+.text-log__cont--01 div h3{
+	margin-left: 12px;
+	padding-block-end: 30px;
+	
+}
+
+/*--------------------*/
+/*  Staff    */
 .quadracar__carousel{
 	padding: 50px;
 	width: 100%;
