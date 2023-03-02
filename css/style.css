@@ -186,7 +186,7 @@ header{
 h1{
 	width: 400px;
 	font-size: 3rem;
-	font-family: 'Tilt Warp', cursive;
+	font-family: 'Tilt Warp',Arial, cursive;
 	text-align: center;
 	align-self: center;
 	color: #4b0082;
