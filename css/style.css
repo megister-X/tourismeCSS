@@ -1,3 +1,29 @@
+
+@font-face {
+   font-family: TiltWarp;
+   src: url(font/TiltWarp-Regular.ttf);
+}
+
+@font-face {
+   font-family: TiltWarpgras;
+   src: url(font/TiltWarp-Regular.ttf);
+   font-weight: bold;
+}
+@font-face {
+   font-family: Strange;
+   src: url(./font/Strange Dreams Italic.ttf);
+   font-stretch: semi-condensed;
+   font-style: italic;
+   	font-weight: 900;
+}
+
+:root {
+  --blue: #6495ed;
+  --white: #faf0e6;
+}
+
+
+
   
 
 /*   Styles Généraux */
@@ -33,6 +59,12 @@
   a{
   	cursor: pointer;
   	text-decoration: none;
+
+  	transition: color 1s;
+  	transition-timing-function: ease;
+  		transition-duration: 2s;
+  		transition-delay: 0.1s;
+  		transition-property: background-color;
   }
   
 
@@ -60,6 +92,27 @@ a:active {
   color: blue;
 } 
 
+ /*p::first-line {
+  color: #4faf9f;
+  font-variant: small-caps;
+}*/
+/*p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+p::marker {
+  color: teal;
+  font-size: 23px;
+}
+p::selection {
+  color: darkslategrey;
+  background: lightcyan;
+  opacity: 50%;
+}
+q:lang(no) {
+  quotes: "*" "*";
+}
+*/
   .column-center{
   	display: flex;
   	flex-direction: column;
@@ -106,6 +159,8 @@ nav ul li a{
 	width: 100px;
 	height: 30px;
 	background-color: blue;
+
+	font-family: "TiltWarpgras", sans-serif;
 }
 
 
@@ -123,8 +178,9 @@ header{
 	justify-content: space-between;
 	margin: 6px ;
 }
-figure{
+.logo figure{
 	width: 150px;
+	border-bottom: 2px solid var(--blue); 
 }
 
 h1{
@@ -140,7 +196,62 @@ h1{
 	width: 100%;
 	margin: 12px 0;
 	background-color: sienna;
+
 }
+
+
+/*   Flash info */
+.news__flash{
+	display: flex;
+	min-width: 100%;
+	height: 75px;
+	border-block: 1rem solid red;
+	overflow: hidden; 
+}
+
+.news__flash a{
+	display: inline-block;
+	margin: 6px 2px;
+	font-size: 20px;
+	min-width: fit-content;
+	padding-inline: 3px;
+	text-align: center;
+	align-self: center;
+}
+
+.news__flash a::before,
+.news__flash a::after{
+	content: "⚡️";
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+}
+.news__flash--defilement{
+	display: flex;
+	min-width: fit-content;
+	overflow: visible;
+	height: 75px;
+	border-block: 1rem solid red;
+	text-align: center;
+	align-self: center;
+	animation-delay: 0s;
+	animation-name: example;
+	animation-fill-mode: backwards;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal; /*reverse; alternate; alternate-reverse; */
+}
+@keyframes example {
+  0%{transform: translateX(100%);}
+  17%{transform: translateX(50%);}
+  34%{transform: translateX(0%);}
+  51%{transform: translateX(-50%);}
+  68%{transform: translateX(-100%);}
+  85%{transform: translateX(-150%);}
+  100%{transform: translateX(-200%);}
+}
+
 
 
 /*   Main    */
@@ -202,28 +313,9 @@ main section{
   text-overflow: ellipsis;
   color: saddlebrown;
   background-color: honeydew;
-  font-size: 0.9rem;
+  font-family: Strange;
+  font-size: 1.7rem;
  }
- p::first-line {
-  color: #4faf9f;
-  font-variant: small-caps;
-}
-p::first-letter {
-  color: #ff0000;
-  font-size: xx-large;
-}
-p::marker {
-  color: teal;
-  font-size: 23px;
-}
-p::selection {
-  color: darkslategrey;
-  background: lightcyan;
-  opacity: 50%;
-}
-q:lang(no) {
-  quotes: "*" "*";
-}
 /*--------------------*/
 
 /*   Partenaires */
@@ -272,9 +364,17 @@ q:lang(no) {
 }
 .quadra--card__img figure{
 	width: 35%;
-	outline: 4px ridge powderblue;
+	
+	-webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  outline: 4px ridge powderblue;
 	 outline-offset: 15px;
 	border-radius: 50%;
+}
+
+.quadra--card__img figure img{
+	object-fit: cover;
+  object-position: 0% 0%;
 }
 .quadra--card__img div{
 	display: flex;
@@ -290,7 +390,7 @@ footer{
 	width: 100%;
 	height: 250px;
 
-	background-image: url("../images/main-banner.jpg");
+  background-image: url("../images/main-banner.jpg");
 	backdrop-filter: ;
 	background-attachment: fixed;
 	background-size: cover;
@@ -314,15 +414,31 @@ footer{
 
 
 
-
+.apropos__txt{
+	width: 80%;
+	margin-inline: 10%;
+	column-rule: 2px dashed tomato;
+	column-gap: 12px;
+	column-count: 4;
+	column-fill: balance;
+	column-width: 200px;
+}
+.apropos__txt h2{
+	width: 100%;
+	column-span: all;
+	align-self: center;
+	text-align: center;
+}
 
 /*   Produits */
 main.produits{
 	width: 100%;
 }
 main.produits section{
+	display: flex;
+
 	width: 80%;
-	margin: 0 8rem;
+	margin: 0rem 8rem;
 }
 
 .basket{
@@ -330,6 +446,7 @@ main.produits section{
 	align-items: center;
 	max-width: 45rem;
 	background-color: #fff;
+	margin: 2rem;
 	padding: 2.5rem;
 	box-shadow: 0 1.4rem 8rem rgba(0,0,0,0.2);
 }
@@ -340,14 +457,18 @@ main.produits section{
 	max-width: 22rem;
 	height: 19rem;
 	transform: translateX(-8rem);
+	resize: both;
+  overflow: auto;
 }
 
 .basket__img img{
 	display: block;
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	border-radius: 0.8rem;
+	-webkit-box-reflect: right;
+	box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
 }
 
 .basket__img::before{
@@ -364,6 +485,7 @@ main.produits section{
 	display: inline-block;
 	color: #8e8c8c;
 	font-weight: 600;
+	font-size: 4rem;
 	margin: 0.5rem 0;
 }
 
@@ -374,10 +496,14 @@ main.produits section{
 	color: #4facfe;
 }
 
-.basket__info p{
-	margin-bottom: 3rem;
-	color: rgba(0,0,0,0.7);
+.basket__info{
+/*	bleed: 2rem;*/
+padding-left: 6px;
+	background-color: mintcream;
+/*	box-shadow: inset 0 1.4rem 8rem currentcolor;*/
 }
+
+.basket__info p,
 .basket__info a{
 	margin-bottom: 3rem;
 	color: rgba(0,0,0,0.7);
