@@ -325,13 +325,26 @@ footer{
 
 
 /*   Gallerie */
-main .gallerie{
-
+main .gallerie {
+	width: 100%;
+	
+	display: grid;
+	min-height: 600px;
+	grid-template-columns: repeat(4,25%);
+	grid-auto-flow: row;
+	gap: 0px;
+	overflow-wrap: normal;
 }
 .responsive {
-  padding: 0 6px;
+  padding: 6px;
   float: left;
-  width: 24.99999%;
+  width: 100%;
+  margin:3px 12px;
+}
+
+.responsive a{
+	display: block;
+	border: 1px solid #ccc;
 }
 
 .responsive a:hover {
@@ -341,26 +354,24 @@ main .gallerie{
 .responsive figcaption{
   padding: 15px;
   text-align: center;
+  display: none;
 }
 
-.responsive a{
-	display: block;
-	width= 600px;
-	height= 400px;
-	border: 1px solid #ccc;
-}
 
 @media only screen and (max-width: 700px) {
   .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
+    margin: 6px 0; 
+ }
+  main .gallerie{
+  grid-template-columns: repeat(2,49.99999%);
+}
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
+  main .gallerie
+  {
+  grid-template-columns: repeat(1,100%);
+}
 }
 .clearfix:after {
   content: "";
