@@ -52,8 +52,41 @@
 	</header>
 
 	<!-- Main -->
-	<main>
-		
+	<main class="contact">
+		<!-- Message -->
+		<section>
+			<form class="column-center" action="/action_page.php" id="form1" method="post" target="_parent">
+				<legend>Envoyez nous un message</legend>
+				<fieldset class="row-center">
+					<div class="client__info">
+						<label class="client__name" for="prenom">Prénom</label>
+						<input type="text" name="prenom" id="prenomClient" value="Prenom"  placeholder="Prénom" required>
+						<label class="client__name" for="nom">Nom</label>
+						<input type="text" name="nom" id="nomClient" value="Nom" placeholder="Nom" required>
+						<label for="telephone">Téléphone</label>
+						<input type="tel" name="telephone" id="telClient" value="" placeholder="0472-678-478"
+  pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
+						<label class="client__name" for="email">E-mail</label>
+						<input type="email" name="email" id="emailClient" value="" required>
+					</div>
+					<div class="client__msg column-center">
+						<label>Votre message</label>
+						<textarea required>
+							
+						</textarea>
+					</div>
+				</fieldset>
+				<div class="bouton">
+					<input type="reset" name="effacer" value="Effacer">
+					<input type="submit" name="envoyer" value="Envoyer">
+				</div>
+			</form>
+			
+		</section>
+		<!-- Adresse -->
+		<section></section>
+		<!-- Carte google map -->
+		<section></section>
 	</main>
 
 	<!-- Footer -->
