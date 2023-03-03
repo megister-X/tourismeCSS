@@ -725,11 +725,14 @@ menu.cat--container {
 
 
 /*   Contact    */
-main.contact{
-	width: 100%;
+.contact__body{
+
 	background-image: url(../images/maldives.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+}
+main.contact{
+	width: 100%;
 }
 .contact section{
 	width: 100%;
