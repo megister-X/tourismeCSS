@@ -271,10 +271,10 @@ main section{
 	justify-content: space-around;
 }
 .tricar article{
-	width: 350px;
+	width: 400px;
 	min-height: 250px;
 	border-image: url(../illustrations/border-image.png) 30 round;
-	border-width: 25px;
+	border-width: 30px;
 }
 
 .tricar article h2{
@@ -296,6 +296,11 @@ main section{
 }
 .tricar article div figure{
 	width: 100%;
+}
+
+
+.imglat-txt__texte figure img{
+	height: 400px;
 }
 
 .tricar article div .img-gauche img{
