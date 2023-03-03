@@ -138,7 +138,7 @@ nav{
 	position: fixed;
 	display: flex;
 	justify-content: center;
-	opacity: 50%;
+	opacity: 100%;
 	height: 50px;
 	z-index: 999;
 }
@@ -264,7 +264,7 @@ main section{
 	width: 100%;
 	min-height: 450px;
 	border: 1px solid papayawhip;
-	margin-bottom: 12px;
+	margin-bottom: 6px;
 }
 
 .tricar{
@@ -280,8 +280,9 @@ main section{
 .tricar article h2{
 	text-align: center;
 	line-height: 40px;
-	 text-decoration-line: overline;
-	 text-decoration-style: wavy;
+	margin-top: 6px;
+	 /*text-decoration-line: overline;
+	 text-decoration-style: wavy;*/
 	 text-transform: capitalize;
 	color: whitesmoke;
 	font-family: 'Rubik', sans-serif;
@@ -366,8 +367,8 @@ main section{
 .quadra--card__img figure{
 	width: 35%;
 	
-	-webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
-  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+	/*-webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);
+  mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5) 50%);*/
   outline: 4px ridge powderblue;
 	 outline-offset: 15px;
 	border-radius: 50%;
@@ -729,6 +730,23 @@ main.contact{
 	width: 100%;
 	min-height: 50vh;
 
+}
+
+.contact__addresses{
+	column-gap: 20px;
+	
+}
+.contact__addresses address{
+	background-color: #4682b450;
+	column-width: 33.99999%;
+}
+.contact__addresses .tel-msg{
+	background-color: #4682b450;
+	column-width: 33.99999%;
+}
+.contact__addresses .reseaux-sociaux{
+	background-color: #4682b450;
+	column-width: 33.99999%;
 }
 
 
