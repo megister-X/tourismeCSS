@@ -721,6 +721,9 @@ menu.cat--container {
 /*   Contact    */
 main.contact{
 	width: 100%;
+	background-image: url(../images/maldives.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .contact section{
 	width: 100%;
@@ -738,6 +741,7 @@ main.contact{
 
 .contact section form fieldset{
 	width: 100%;
+	height: 100%;
 }
 .client__info,
 .client__msg{
@@ -784,4 +788,9 @@ div.bouton input[type="submit"]:hover{
 	background-color: #00ff7f;
 }div.bouton input[type="reset"]:hover{
 	background-color: #ff6347;
+}
+
+.contact section iframe{
+	width: 70%;
+	margin-inline: 15%;
 }
