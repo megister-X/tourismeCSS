@@ -55,19 +55,19 @@
 	<main class="contact">
 		<!-- Message -->
 		<section>
-			<form class="column-center" action="/action_page.php" id="form1" method="post" target="_parent">
+			<form class="column-center" action="/contact.php" id="form1" method="post" target="_parent">
 				<legend>Envoyez nous un message</legend>
 				<fieldset class="row-center">
 					<div class="client__info">
 						<label class="client__name" for="prenom">Prénom</label>
-						<input type="text" name="prenom" id="prenomClient" value="Prenom"  placeholder="Prénom" required>
+						<input type="text" name="prenom" id="prenomClient" value="Prenom"  placeholder="Prénom" pattern="[a-zA-Z]{1,}" maxlength="50" required>
 						<label class="client__name" for="nom">Nom</label>
-						<input type="text" name="nom" id="nomClient" value="Nom" placeholder="Nom" required>
+						<input type="text" name="nom" id="nomClient" value="Nom" placeholder="Nom" pattern="[a-zA-Z]{1,}"  maxlength="50" required>
 						<label for="telephone">Téléphone</label>
 						<input type="tel" name="telephone" id="telClient" value="" placeholder="0472-678-478"
   pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}">
 						<label class="client__name" for="email">E-mail</label>
-						<input type="email" name="email" id="emailClient" value="" required>
+						<input type="email" name="email" id="emailClient" value=""  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required>
 					</div>
 					<div class="client__msg column-center">
 						<label>Votre message</label>
