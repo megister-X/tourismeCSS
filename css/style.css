@@ -38,6 +38,7 @@
   }
 
   body{
+  	position: relative;
   	background-color: #e6e6fa;
   	width: 100vw;
   	min-height: 200vh;
@@ -50,6 +51,11 @@
   	margin-left: auto;
   	width: 100%;
   	height: auto;
+  }
+
+  .centrer{
+  	align-self: center;
+  	text-align: center;
   }
 
   main i{
@@ -125,6 +131,17 @@ q:lang(no) {
   	justify-content: center;
   	align-items: flex-start;
   }
+  .row-spBetween{
+  	display: flex;
+  	justify-content: space-between;
+  	align-items: center;
+  }
+  .row-center{
+  	display: flex;
+  	justify-content: center;
+  	align-items: flex-start;
+  }
+
 
   .carte-bordure{
   	border: 1px solid orangered;
@@ -135,22 +152,38 @@ q:lang(no) {
 
 /*  Navigation   */
 nav{
-	width: 100%;
-	position: fixed;
-	display: flex;
-	justify-content: center;
-	opacity: 100%;
+  position: fixed;
+  width: 100%;
 	height: 50px;
+	margin-top: -50px;
+	padding-inline: 12px;
 	z-index: 999;
+	background-color: #bccad6;
 }
+
+.nav-rs{
+	width: fit-content;
+	align-self: center;
+	padding-left: 2px;
+}
+.nav-rs a{
+	width: 200px;
+	height: 30px;
+}
+
 nav ul{
-	width: 100%;
-	height: 50px;
+	display: flex;
+	width: fit-content;
+	height: 30px;
 }
 
 nav ul li{
-	margin-inline: 6px;
+	margin-inline: 2px;
 	list-style: none;
+	background-color: gray;
+	text-align: center;
+	align-self: center;
+	height: 30px;
 }
 nav ul li a{
 	display: block;
@@ -159,9 +192,7 @@ nav ul li a{
 	text-align: center;
 	align-self: center;
 	width: 100px;
-	height: 30px;
 	background-color: blue;
-
 	font-family: TiltWarpgras, sans-serif;
 }
 
@@ -170,9 +201,10 @@ nav ul li a{
 /*   Header    */
 
 header{
+	position: relative;
 	width: 100%;
 	min-height: 250px;
-
+	margin-top: 50px;
 }
 .logo{
 	height: 150px;
@@ -537,7 +569,9 @@ padding-left: 12px;
 	background-color: midnightblue;
 	color: #622569;
 }
-
+/*---------------------------------------------------------------------------------*/
+/*------------------Fin de page d'Accueil---------------*/
+/*---------------------------------------------------------------------------------*/
 
 /*     About    */
 main.apropos{
@@ -569,6 +603,10 @@ main.apropos{
 	align-self: center;
 	text-align: center;
 }
+
+/*---------------------------------------------------------------------------------*/
+/*------------------Fin de page d'Apropos ---------------*/
+/*---------------------------------------------------------------------------------*/
 
 /*   Produits */
 main.produits{
@@ -662,38 +700,9 @@ padding-left: 6px;
 .basket__cta:hover{
 	background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
-
-@media screen and (max-width: 1068px){
-	.basket{
-		max-width: 40rem;
-	}
-	.basket__img{
-		min-width: 15rem;
-		max-width: 15rem;
-	}
-}
-@media screen and (max-width: 868px){
-.basket{
-		max-width: 35rem;
-	}
-}
-@media screen and (max-width: 768px){
-.basket{
-		max-width: 25rem;
-		flex-direction: column;
-	}
-	.basket__img{
-		max-width: 100%;
-		transform: translate(0, -8rem);
-	}
-}
-
-
-
-
-
-
-
+/*---------------------------------------------------------------------------------*/
+/*------------------Fin de page Gallerie ---------------*/
+/*---------------------------------------------------------------------------------*/
 
 /*   Gallerie */
 main .gallerie {
@@ -749,6 +758,10 @@ main .gallerie {
   display: table;
   clear: both;
 }
+
+/*---------------------------------------------------------------------------------*/
+/*------------------Fin de page Produits ---------------*/
+/*---------------------------------------------------------------------------------*/
 /*    Blog    */
 main.blog{
 	display: flex;
@@ -816,7 +829,9 @@ menu.cat--container {
   background-color: whitesmoke;
   color: #4C42f2;
 }
-
+/*---------------------------------------------------------------------------------*/
+/*------------------Fin de page Blog ---------------*/
+/*---------------------------------------------------------------------------------*/
 
 
 
@@ -825,6 +840,10 @@ menu.cat--container {
 
 
 
+
+/*---------------------------------------------------------------------------------*/
+/*------------------Fin de page Faq ---------------*/
+/*---------------------------------------------------------------------------------*/
 
 /*   Contact    */
 .contact__body{
@@ -898,3 +917,124 @@ div.bouton input[type="submit"]:hover{
 }div.bouton input[type="reset"]:hover{
 	background-color: #ff6347;
 }
+
+/*---------------------------------------------------------------------------------*/
+/*------------------Fin de page Contact ---------------*/
+/*---------------------------------------------------------------------------------*/
+
+/*   Les médiaQueries */
+
+@media screen and (max-width: 1068px){
+
+/*	index   */
+
+/*	apropos   */
+/*	produits   */
+.basket{
+		max-width: 40rem;
+	}
+	.basket__img{
+		min-width: 15rem;
+		max-width: 15rem;
+	}
+/*	gallerie   */
+/*	blog   */
+/*	faq   */
+/*	contact   */
+	
+/*_________________________________*/
+}
+
+@media screen and (max-width: 868px){
+/*	index   */
+/*  Navigation   */
+nav{
+	/*display: flex;
+	justify-content: center;
+	opacity: 100%;
+	height: 50px;
+	z-index: 999;*/
+}
+nav ul{
+	width: 100%;
+	height: 50px;
+}
+
+nav ul li{
+	margin-inline: 6px;
+	list-style: none;
+}
+nav ul li a{
+	display: block;
+	padding-block: 6px;
+	color: transparent;
+	text-align: center;
+	align-self: center;
+	width: 100px;
+	height: 30px;
+	background-color: blue;
+
+	font-family: TiltWarpgras, sans-serif;
+}
+/*	apropos   */
+/*	produits   */
+.basket{
+		max-width: 35rem;
+	}
+/*	gallerie   */
+/*	blog   */
+/*	faq   */
+/*	contact   */
+
+/*_________________________________*/
+}
+
+@media screen and (max-width: 768px){
+	/*	index   */
+/*	apropos   */
+/*	produits   */
+.basket{
+		max-width: 25rem;
+		flex-direction: column;
+	}
+	.basket__img{
+		max-width: 100%;
+		transform: translate(0, -8rem);
+	}
+/*	gallerie   */
+/*	blog   */
+/*	faq   */
+/*	contact   */
+
+
+/*_________________________________*/
+}
+
+@media screen and (max-width: 640px){
+	/*	index   */
+/*	apropos   */
+/*	produits   */
+
+/*	gallerie   */
+/*	blog   */
+/*	faq   */
+/*	contact   */
+
+
+/*_________________________________*/
+}
+
+@media screen and (max-width: 414px){/* 360*/
+	/*	index   */
+/*	apropos   */
+/*	produits   */
+
+/*	gallerie   */
+/*	blog   */
+/*	faq   */
+/*	contact   */
+
+
+/*_________________________________*/
+}
+
