@@ -486,7 +486,7 @@ footer .addresse__container--footer section{
 .contact__addresses address{
 	margin-inline: 15%;
 	width: 100%;
-	background-color: #4682b450;
+/*	background-color: #4682b450;*/
 /*	column-width: 33.99999%;*/
 }
 .contact__addresses address a figure{
