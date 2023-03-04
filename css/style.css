@@ -81,7 +81,7 @@ a:visited {
 
 /* mouse over link */
 li:hover a{
-  color: #034f84;
+  color: orange;
   border: 1px solid lime;
   background-color: #92a8d150;
   width: 100px;
@@ -513,8 +513,15 @@ address p i:after{
 	align-items: flex-start;
 	width: 100%;
 }
+
+.addresse__container--footer section iframe{
+	width: 100%;
+}
+
 .reseaux-sociaux{
-	background-color: #4682b450;
+	background-color: #034f84;
+	align-self: center;
+padding-left: 12px;
 }
 
 
@@ -523,6 +530,7 @@ address p i:after{
 .cgu-ml{
 	display: inline-flex;
 	justify-content: space-around;
+	text-align: center;
 	align-items: center;
 	width: 100%;
 	height: 50px;
@@ -889,9 +897,4 @@ div.bouton input[type="submit"]:hover{
 	background-color: #00ff7f;
 }div.bouton input[type="reset"]:hover{
 	background-color: #ff6347;
-}
-
-.contact section iframe{
-	width: 70%;
-	margin-inline: 15%;
 }
