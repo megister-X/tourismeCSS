@@ -482,10 +482,10 @@ footer .addresse__container--footer section{
 	margin-inline: 15%;
 	width: 100%;
 /*	background-color: #4682b450;*/
-	column-width: 33.99999%;
+/*	column-width: 33.99999%;*/
 }
 .contact__addresses address a figure{
-	width: 50%;
+	width: 20%;
 }
 .contact__addresses address h3{
 	color: blue;
@@ -493,11 +493,11 @@ footer .addresse__container--footer section{
 }
 
 .contact__addresses address .tel-msg{
+	align-items: flex-start;
 	width: 100%;
 }
-.contact__addresses .reseaux-sociaux{
+.reseaux-sociaux{
 	background-color: #4682b450;
-	column-width: 33.99999%;
 }
 
 
