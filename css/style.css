@@ -356,9 +356,8 @@ main section{
 
 /*   Texte et image */
 .image-texte{
-	width: 90%;
+	width: 100%;
 min-height: 400px;
-margin-inline: 5%;
 }
 .image-texte__01{
 	display: flex;
@@ -370,14 +369,16 @@ margin-inline: 5%;
 }
 
 .image-texte__01 figure{
-width: 30%;
+width: 34%;
 height: 300px;
+text-align: center;
+vertical-align: middle;
 object-fit: cover;
 }
 .image-texte__01 div.image-texte__txt{
 	width: 60%;
 	height: 300px;
-	padding-inline: 15%;
+	padding-inline: 12%;
 	background-color: #20b2aa10;
 	clip-path: polygon(0% 0, 80% 0, 100% 100%, 20% 100%);
 	box-shadow: 0.1rem 0.1rem 6px #00bfff05 inset, -0.1rem -0.1rem 6px #00bfff05;
@@ -1076,11 +1077,18 @@ main .tricar article{
 	flex-direction: column;
 	width: 100%;
 	min-height: 300px;
+	align-items: flex-start;
 	margin:12px 0;
 }
-.image-texte__01 figure,
+.image-texte__01 figure{
+	width: 100%;
+	margin-block: 2px;
+	padding-inline: 12px;
+}
 .image-texte__01 div.image-texte__txt{
 	width: 100%;
+	margin-block: 2px;
+	padding-inline: 24%;
 }
 /*	apropos   */
 /*	produits   */
