@@ -27,9 +27,6 @@
 }
 
 
-
-  
-
 /*   Styles Généraux */
   *{
   	margin: 0;
@@ -42,7 +39,7 @@
   	background-color: #e6e6fa;
   	width: 100vw;
   	min-height: 100vh;
-  	overflow: auto;
+  	overflow: 0px;
   	font-family: Roboto, sans-serif;
   }
   img{
@@ -187,8 +184,8 @@ nav ul li a:active {
   color: blue;
 } 
 
-/*   Header    */
 
+/*   Header    */
 header{
 	position: relative;
 	width: 100%;
@@ -949,7 +946,7 @@ div.bouton input[type="submit"]:hover{
 /*	index   */
 /*  Navigation   */
 nav{
-	min-height: 50px;
+	
 }
 nav ul{
 }
@@ -997,6 +994,42 @@ nav ul li a{
 
 @media screen and (max-width: 640px){
 	/*	index   */
+
+	.nav-rs{
+	width: fit-content;
+	align-self: center;
+	padding-left: 2px;
+}
+.nav-rs a{
+	width: 200px;
+	height: 30px;
+}
+
+nav ul{
+	display: flex;
+	width: fit-content;
+	height: 50px;
+}
+
+/*   Responsive navigation   */
+  .navigation li:not(:first-child) {display: none;}
+  .navigation li.icon {
+    float: right;
+    display: block;
+  }
+
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navigation.responsive li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+/*_____________________ __________________ */
 /*	apropos   */
 /*	produits   */
 
