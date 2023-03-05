@@ -67,7 +67,7 @@
 		<section>
 			<form class="column-center" action="/contact.php" id="form1" method="post" target="_parent">
 				<legend>Envoyez nous un message</legend>
-				<fieldset class="row-center">
+				<fieldset class="champs__form row-center">
 					<div class="client__info">
 						<label class="client__name" for="prenom">Prénom</label>
 						<input type="text" name="prenom" id="prenomClient" value="Prenom"  placeholder="Prénom" pattern="[a-zA-Z]{1,}" maxlength="50" required>
@@ -80,7 +80,7 @@
 					</div>
 					<div class="client__msg column-center">
 						<label>Votre message</label>
-						<textarea name="message" id="message" required>
+						<textarea name="message" id="message" rows="8" cols="40" onresize="none" required>
 							
 						</textarea>
 					</div>
