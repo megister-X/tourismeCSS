@@ -469,9 +469,6 @@ footer div{
 	width: 100%;
 }
 
-footer div section{
-	width: 50%;
-}
 footer .service__container--footer{
 	min-height: 200px;
 	margin: 6px;
@@ -482,7 +479,7 @@ footer .service__container--footer section{
 		border: 10px solid gray;
   	box-shadow: 1px 1px 6px 0 gray;
   	min-height: 200px;
-  	width: 18%;
+  	width: 25%;
   	text-align: center;
   	margin-inline: 5%;
   	background-color: transparent;
@@ -508,6 +505,7 @@ footer .addresse__container--footer{
 }
 footer .addresse__container--footer section{
 	margin-inline: 3px;
+	width: 50%;
 }
 
 .contact__addresses{
@@ -1149,7 +1147,95 @@ main .tricar article{
 	flex-direction: column;
 	width: 100%;
 }
+/*   footer   */
+footer div{
+	width: 100%;
+}
 
+footer div section{
+	width: 50%;
+}
+footer .service__container--footer{
+	min-height: 200px;
+	margin: 6px;
+
+/*	border: 2px dashed #fff2df;*/
+}
+footer .service__container--footer section{
+		border: 10px solid gray;
+  	box-shadow: 1px 1px 6px 0 gray;
+  	min-height: 200px;
+  	width: 18%;
+  	text-align: center;
+  	margin-inline: 5%;
+  	background-color: transparent;
+}
+.service__container--footer section h2{
+	align-self: center;
+	background-color: #a2836e;
+	border-radius: 3px;
+}
+.service__container--footer section ul{
+  	list-style: none;
+  	padding-inline: 6px;
+  	color: #fff;
+}
+
+.reservation ul li a{
+	border: none;
+	color: orange;
+}
+
+footer .addresse__container--footer{
+	margin-top: 12px;
+}
+footer .addresse__container--footer section{
+	margin-inline: 3px;
+}
+
+.contact__addresses{
+	column-gap: 20px;
+	width: 80%;
+}
+.contact__addresses address{
+	margin-inline: 15%;
+	width: 100%;
+/*	background-color: #4682b450;*/
+/*	column-width: 33.99999%;*/
+}
+.contact__addresses address a figure{
+	width: 20%;
+}
+.contact__addresses address h3{
+	color: blue;
+	font-weight: bolder;
+}
+
+address p b{
+	position: relative;
+	width: 10px;
+/*	background-color: red;*/
+	margin-right: 10px;
+}
+address p b:after{
+	content: "";
+	width: 500px;
+	border: 2px dashed transparent;
+}
+
+.contact__addresses address .tel-msg{
+	align-items: flex-start;
+	width: 100%;
+}
+
+.tel-msg a svg{
+	margin-right: 12px;
+	fill: orange;
+}
+
+.addresse__container--footer section iframe{
+	width: 100%;
+}
 
 /*	apropos   */
 /*	produits   */
