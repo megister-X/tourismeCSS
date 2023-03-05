@@ -501,6 +501,7 @@ footer .service__container--footer section{
 }
 
 .reservation ul li a{
+	border: none;
 	color: orange;
 }
 
@@ -529,21 +530,26 @@ footer .addresse__container--footer section{
 	font-weight: bolder;
 }
 
-address p i{
+address p b{
 	position: relative;
-	width: 500px;
+	width: 10px;
 /*	background-color: red;*/
 	margin-right: 10px;
 }
-address p i:after{
+address p b:after{
 	content: "";
-	width: 100px;
+	width: 500px;
 	border: 2px dashed transparent;
 }
 
 .contact__addresses address .tel-msg{
 	align-items: flex-start;
 	width: 100%;
+}
+
+.tel-msg a svg{
+	margin-right: 12px;
+	fill: orange;
 }
 
 .addresse__container--footer section iframe{
