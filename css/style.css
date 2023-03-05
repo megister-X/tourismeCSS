@@ -1146,20 +1146,12 @@ main .tricar article{
 	background-color: blue;
 }
 .quadra--card__img figure{
-	width: 50%;
-	 outline-offset: 12px;
+	width: 100%;
 	border-radius: 50%;
 }
 
-.quadra--card__img figure img{
-	object-fit: cover;
-  object-position: 0% 0%;
-}
 .quadra--card__img div{
-	display: flex;
 	flex-direction: column;
-	align-items: center;
-	background-color: lightgray;
 	width: 100%;
 }
 
