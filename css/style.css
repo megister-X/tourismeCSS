@@ -371,7 +371,7 @@ min-height: 400px;
 
 .image-texte__01 figure{
 width: 30%;
-height: 300px;
+min-height: 300px;
 text-align: center;
 vertical-align: middle;
 object-fit: cover;
