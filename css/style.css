@@ -354,6 +354,37 @@ main section{
  }
 /*--------------------*/
 
+/*   Texte et image */
+.image-texte{
+	width: 90%;
+min-height: 400px;
+margin-inline: 5%;
+}
+.image-texte__01{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	min-height: 300px;
+	margin:12px 0;
+}
+
+.image-texte__01 figure{
+width: 30%;
+height: 300px;
+object-fit: cover;
+}
+.image-texte__01 div.image-texte__txt{
+	width: 60%;
+	height: 300px;
+	padding-inline: 15%;
+	background-color: #20b2aa10;
+	clip-path: polygon(0% 0, 80% 0, 100% 100%, 20% 100%);
+	box-shadow: 0.1rem 0.1rem 6px #00bfff05 inset, -0.1rem -0.1rem 6px #00bfff05;
+}
+.image-texte__01 div.image-texte__txt:nth-child(1){
+	clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
+}
 /*   Partenaires */
 .text-logo{
 	min-height: 220px;
@@ -420,37 +451,6 @@ main section{
 	align-items: center;
 	background-color: lightgray;
 	width: 60%;
-}
-/*   Texte et image */
-.image-texte{
-	width: 90%;
-min-height: 400px;
-margin-inline: 5%;
-}
-.image-texte__01{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	height: 300px;
-	margin:0 12px 12px;
-}
-
-.image-texte__01 figure{
-width: 30%;
-height: 300px;
-object-fit: cover;
-}
-.image-texte__01 div.image-texte__txt{
-	width: 60%;
-	height: 300px;
-	padding-inline: 15%;
-	background-color: #20b2aa10;
-	clip-path: polygon(0% 0, 80% 0, 100% 100%, 20% 100%);
-	box-shadow: 0.1rem 0.1rem 6px #00bfff05 inset, -0.1rem -0.1rem 6px #00bfff05;
-}
-.image-texte__01 div.image-texte__txt:nth-child(1){
-	clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%);
 }
 
 
@@ -1064,12 +1064,23 @@ nav .navigation li{
 
 main .tricar{
 	flex-direction: column;
-	padding: 12px;
+	margin-block: 12px;
 }
 
 main .tricar article{
 	width: 100%;
 	margin-block: 3px;
+}
+
+.image-texte__01{
+	flex-direction: column;
+	width: 100%;
+	min-height: 300px;
+	margin:12px 0;
+}
+.image-texte__01 figure,
+.image-texte__01 div.image-texte__txt{
+	width: 100%;
 }
 /*	apropos   */
 /*	produits   */
