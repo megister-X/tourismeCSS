@@ -1030,6 +1030,7 @@ nav .navigation{
 	height: 50px;*/
 }
 nav .navigation li{
+	align-self: left;
 	}
 
 /*   Responsive navigation   */
@@ -1054,11 +1055,22 @@ nav .navigation li{
     top: 6px;
   }
   .navigation.responsive li{
-    float: none;
+    float: left;
+    align-self: left;
     width: 100%;
     display: block;
   }
 /*_____________________ __________________ */
+
+main .tricar{
+	flex-direction: column;
+	padding: 12px;
+}
+
+main .tricar article{
+	width: 100%;
+	margin-block: 3px;
+}
 /*	apropos   */
 /*	produits   */
 
