@@ -1,6 +1,6 @@
 // Responsive menu
 
-function myFunction() {
+function fonctResponsive() {
   var x = document.getElementById("navBarre");
   if (x.className === "navigation") {
     x.className += " responsive";
