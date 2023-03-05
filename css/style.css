@@ -1024,6 +1024,7 @@ nav .navigation{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	background-color: blue;
 	/*display: flex;
 	width: fit-content;
 	height: 50px;*/
