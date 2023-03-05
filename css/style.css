@@ -42,7 +42,7 @@
   	background-color: #e6e6fa;
   	width: 100vw;
   	min-height: 200vh;
-
+  	overflow: auto;
   	font-family: Roboto, sans-serif;
   }
   img{
@@ -955,11 +955,7 @@ div.bouton input[type="submit"]:hover{
 /*	index   */
 /*  Navigation   */
 nav{
-	/*display: flex;
-	justify-content: center;
-	opacity: 100%;
-	height: 50px;
-	z-index: 999;*/
+	min-height: 50px;
 }
 nav ul{
 	width: 100%;
