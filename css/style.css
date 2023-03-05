@@ -366,10 +366,11 @@ min-height: 400px;
 	width: 100%;
 	min-height: 300px;
 	margin:12px 0;
+	padding-inline: 12px;
 }
 
 .image-texte__01 figure{
-width: 34%;
+width: 30%;
 height: 300px;
 text-align: center;
 vertical-align: middle;
@@ -402,7 +403,7 @@ object-fit: cover;
 	min-height: 150px;
 }
 .text-log__cont--01 figure{
-	width: 30%;
+	width: 35%;
 	align-self: center;
 	margin-left: 6px;
 }
