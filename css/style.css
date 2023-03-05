@@ -41,7 +41,7 @@
   	position: relative;
   	background-color: #e6e6fa;
   	width: 100vw;
-  	min-height: 200vh;
+  	min-height: 100vh;
   	overflow: auto;
   	font-family: Roboto, sans-serif;
   }
@@ -549,6 +549,11 @@ address p b:after{
 	background-color: #034f84;
 	align-self: center;
 padding-left: 12px;
+}
+
+/*   rs    */
+.rs{
+	flex: 1;
 }
 
 
