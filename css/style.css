@@ -399,7 +399,7 @@ object-fit: cover;
 	justify-content: space-between;
 	box-shadow: 0px 0px 2px 1px black;
 	width: 30%;
-	height: 150px;
+	min-height: 150px;
 }
 .text-log__cont--01 figure{
 	width: 30%;
@@ -1093,6 +1093,41 @@ main .tricar article{
 	margin-block: 2px;
 	padding-inline: 24%;
 }
+
+/*   Partenaires */
+.text-log__cont{
+	width: 100%;
+	margin: 12px;
+	min-height: 150px;
+}
+
+.text-log__cont--01{
+	flex-direction: column;
+	justify-content: center;
+	width: 30%;
+	min-height: 150px;
+}
+.text-log__cont--01 figure{
+	width: 30%;
+	align-self: center;
+	margin-left: 6px;
+	margin:0;
+}
+.text-log__cont--01 div{
+	width: 100%;
+}
+
+.text-log__cont--01 div p{
+	margin: 2px 2px;
+	padding: 2px 2px;
+}
+.text-log__cont--01 div h3{
+	text-align: center;
+	padding: 0 2px;
+	font-size: 1.8rem;
+	color: blue;
+}
+
 
 /*	apropos   */
 /*	produits   */
