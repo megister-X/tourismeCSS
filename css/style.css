@@ -600,9 +600,17 @@ main.apropos{
 	width: 100%;
 	min-height: 100%;
 	padding: 12px;
-}
-section.bio{
 
+}
+section.bio article{
+	padding: 12px;
+	margin-block: 12px;
+	box-shadow: 1px 1px 2px 0.2px black;
+}
+
+.bio article h2{
+	background-color: lightskyblue;
+	text-align: center;
 }
 
 
