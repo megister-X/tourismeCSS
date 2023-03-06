@@ -526,17 +526,18 @@ footer .addresse__container--footer section{
 }
 
 address p b{
+	display: none;
 	position: relative;
 	width: 10px;
 /*	background-color: red;*/
 	margin-right: 10px;
 }
-address p b:after{
+/*address p b:after{
 	content: "";
 	width: 500px;
 	border: 2px dashed transparent;
 }
-
+*/
 .contact__addresses address .tel-msg{
 	align-items: flex-start;
 	width: 100%;
