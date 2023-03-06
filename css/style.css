@@ -585,34 +585,28 @@ padding-left: 12px;
 
 /*     About    */
 main.apropos{
-	background-image: url("../images/thailand-sea.jpg");
+	/*background-image: url("../images/thailand-sea.jpg");
 	backdrop-filter: ;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center center;
 	background-clip: border-box;
 	background-repeat: no-repeat;
-	background-blend-mode: color-burn;
+	background-blend-mode: color-burn;*/
+	min-height: 50vh;
 }
 
-
-.apropos__txt{
-	width: 80%;
-	margin-inline: 10%;
-	column-rule: 2px dashed tomato;
-	column-gap: 12px;
-	column-count: 4;
-	column-fill: balance;
-	column-width: 200px;
-
-	background-color: #7fffd470;
-}
-.apropos__txt h2{
+.apropos section{
 	width: 100%;
-	column-span: all;
-	align-self: center;
-	text-align: center;
+	min-height: 100%;
+	padding: 12px;
 }
+section.bio{
+
+}
+
+
+
 
 /*---------------------------------------------------------------------------------*/
 /*------------------Fin de page d'Apropos ---------------*/
