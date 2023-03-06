@@ -115,6 +115,10 @@ q:lang(no) {
   	box-shadow: 1px 1px 6px 0 yellowgreen;
   }
 
+  .ul-bio{
+  	list-style: none;
+  }
+
 
 
 /*  Navigation   */
