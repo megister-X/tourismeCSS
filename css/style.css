@@ -1154,13 +1154,15 @@ nav .navigation{
 	display: flex;
 	justify-content: space-between;
 	background-color: blue;
-	/*display: flex;
-	width: fit-content;
-	height: 50px;*/
 }
 nav .navigation li{
 	align-self: left;
+	width: 100%;
 	}
+	nav ul li a{
+	width: 100%;
+	
+}
 
 /*   Responsive navigation   */
   .navigation li:not(:first-child) {display: none;}
