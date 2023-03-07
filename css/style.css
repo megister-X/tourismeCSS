@@ -622,7 +622,7 @@ section.bio article{
 	text-align: center;
 }
 
-.ul-bio{
+article .bio__jeunesse .ul-bio{
 	min-height: 150px;
 }
 
@@ -1316,6 +1316,10 @@ address p b{
 }
 
 /*	apropos   */
+
+article .bio__jeunesse .ul-bio{
+	width: 50%;
+}
 /*	produits   */
 
 /*	gallerie   */
