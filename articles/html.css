@@ -1,0 +1,51 @@
+
+
+*,
+::before,
+::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.row_centrer{
+	display: flex;
+	align-self: flex-start;
+}
+
+.column_centrer{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.bordure{
+	box-shadow: 0 0 1.5px 0.5 black;
+
+}
+
+
+a{
+	text-decoration: none;
+}
+
+img{
+	width: auto;
+	height: 400px;
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	min-width: 100vh;
+}
+
+
+header,
+nav,
+main,
+footer{
+	width: 100%;
+}
+
