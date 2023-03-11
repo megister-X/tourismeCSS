@@ -20,9 +20,11 @@
 }
 
 .bordure{
-	box-shadow: 0 0 1.5px 0.5 black;
-
+	box-shadow: 0 0 5px 0.5 black;
 }
+
+.pos__relative{position: relative;}
+.pos__absolute{position: absolute;}
 
 
 a{
@@ -31,7 +33,7 @@ a{
 
 img{
 	width: auto;
-	height: 400px;
+	height: 200px;
 }
 
 body{
@@ -39,6 +41,9 @@ body{
 	flex-direction: column;
 	width: 100vw;
 	min-width: 100vh;
+	row-gap: 6px;
+	padding: 6px;
+	background-color:  #1f618d80;
 }
 
 
@@ -46,6 +51,83 @@ header,
 nav,
 main,
 footer{
-	width: 100%;
+	width: 99%;
+	box-shadow: 2px 2px 6px 1px #fff;
+	margin:0 12px 12px;
 }
 
+header{
+	height: 200px;
+}
+
+nav{
+	justify-content: space-around;
+	height: 50px;
+}
+.carte__interactive{
+	width: 600px;
+	height: 500px;
+	align-self: center;
+	flex-wrap: wrap;
+	background-image: url("./webdesignTeam.jpg");
+	background-size: cover;
+	background-color: red;
+	border-radius: 12px;
+	border:12px solid whitesmoke;
+}
+
+.carte__interactive div{
+	display: none;
+	top: 35%;
+	left: 25%;
+	transform: translate(-25%,-50%);
+/*	background-color: #c1c1c590;*/
+	min-width: 250px;
+	min-height: 70px;
+	color: whitesmoke;
+	font-size: 1.5rem;
+}
+.carte__interactive:hover div{
+	display: block;
+}
+
+.carte__interactive img{
+	width: 50px;
+	height: 50px;
+	top: 90%;
+	left: 90%;
+	transform: translate(-10px, -20px);
+}
+.carte__interactive a{
+	text-align: center;
+	background-color: red;
+	color: whitesmoke;
+	width: 200px;
+	height: 50px;
+	border-radius: 0.2rem;
+}
+
+/*********************************/
+main{
+	min-height: 50vh;
+	column-gap: 6px;
+}
+
+main aside{
+	width: 19.99%;
+	min-height: 50vh;
+	box-shadow: 2px 2px 6px 1px #fff;
+}
+
+main section{
+	width: 59.9%;
+	box-shadow: 2px 2px 6px 1px #fff;
+}
+
+article{
+	box-shadow: 0.5px 0.5px 2px 0.1px #fff;
+}
+
+footer{
+	height: 150px;
+}
