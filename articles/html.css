@@ -82,6 +82,7 @@ body.art footer{
 	width: 99%;
 	box-shadow: 2px 2px 6px 1px #fff;
 	margin:0 12px 12px;
+  padding: 10px;
 }
 
 body.art header{
@@ -90,13 +91,14 @@ body.art header{
 
 body.art nav{
 	justify-content: space-around;
-	height: 50px;
+	height: 23px;
   background-color: #d719ec70;
 }
 body.art nav a{
-    background-color: #d719ff;
+    background-color: #d7f9ff;
     width: 100px;
     height: 150px;
+    padding: 0.2rem;
 }
 .carte__interactive{
 	width: 600px;
@@ -149,9 +151,19 @@ body.art nav a{
 div.choix__box fieldset{
 	width: 40%;
 	min-height: 500px;
+  background-color: red;
+  color: whitesmoke;
 }
 form.choisir{
 
+}
+
+.choisir fieldset{
+  columns: 2;
+}
+
+.choisir fieldset input{
+  background-color: red;
 }
 
 /*********************************/
