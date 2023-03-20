@@ -56,6 +56,9 @@
   	cursor: pointer;
   	text-decoration: none;
   }
+  li{
+  	list-style: none;
+  }
 
   .centrer{
   	align-self: center;
@@ -1049,6 +1052,36 @@ menu.cat--container {
 
 /*   Faq    */
 
+
+main.q-r{
+	width: 50%;
+	background-color: grey;
+	margin: 0 25%;
+}
+
+.cont__q-r details, 
+.raisonnement details{
+	margin: 6px 0;
+	box-shadow: 0 0 2px 0.5px white;
+	width: 80%;
+	min-height: 30px;
+	margin-inline: auto;
+}
+.cont__q-r summary,
+.raisonnement summary{
+	position: relative;
+	font-size: 2rem;
+	background-color: burlywood;
+	text-align: center;
+
+}
+.cont__q-r summary::before{
+	content: " >> ";
+	position: absolute;
+	font-size: 2rem;
+	color: yellow;
+	left: 12px;
+}
 
 
 

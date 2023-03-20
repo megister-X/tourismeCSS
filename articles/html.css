@@ -67,7 +67,7 @@ body.art{
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-	min-width: 100vh;
+	min-height: 100vh;
 	row-gap: 6px;
 	padding: 6px;
 	background-color:  #1f618d80;
@@ -238,6 +238,7 @@ body.art footer{
   max-width: 400px;
   font-family: 'Lato';
   font-weight: 400;
+  background-color: teal;
 }
 
 .form-control, 
