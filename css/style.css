@@ -996,7 +996,8 @@ main.blog section{
 	width: 100%;
   position: relative;
   display: inline-block;
- margin: 10% 10% 0;
+ 	margin: 10% 10% 0;
+ 	min-height: 50px;
  /*  transform: translateX(-25%);*/
 }
 
@@ -1011,7 +1012,7 @@ button.deroulant--bouton{
 }
 
 menu.cat--container {
-  display: none;
+  visibility: hidden;
   position: absolute;
   background-color: #f9f9f9;
   width: 80%;
@@ -1023,7 +1024,6 @@ menu.cat--container {
   color: black;
   padding-block: 12px 16px;
   display: block;
-  
 }
 
 .cat--container a:hover {
@@ -1035,15 +1035,69 @@ menu.cat--container {
 }
 
 .deroulant:hover menu.cat--container{
+	visibility: visible;
   display: block;
   text-align: center;
   box-shadow: 0 0 1px 0.2px black;
+  min-height: 50px;
+  margin-bottom: 6px;
 }
 
 .deroulant:hover .deroulant--bouton {
   background-color: whitesmoke;
   color: #4C42f2;
 }
+
+
+nav.categories {
+	position: relative;
+  background-color: #c1c1c550;
+ margin: 10px 0;
+}
+
+ .categories ul {
+  margin: 0;
+  padding: 0;
+  min-height: 50px;
+  display: flex;
+	flex-direction: column;
+  justify-content: space-between;
+}
+
+.categories ul li {
+  margin: 0 10px;
+}
+
+.categories ul li a {
+	all: inherit;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.categories ul li a:hover {
+	all: inherit;
+	background-color: seagreen;
+  filter: hue-rotate(45deg);
+}
+
+.blog section{
+	width: 80%;
+	
+	margin-block: 0 12px;
+	padding: 0 12px 12px 12px;
+}
+.blog section article{
+	background-color: cornsilk;
+}
+
+figure{
+	width: 250px;
+	height: 250px;
+}
+
+
 /*---------------------------------------------------------------------------------*/
 /*------------------Fin de page Blog ---------------*/
 /*---------------------------------------------------------------------------------*/
