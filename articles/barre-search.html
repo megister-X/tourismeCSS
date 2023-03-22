@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>barre de recherche</title>
+</head>
+<body>
+	<div class="container">
+		<input id="searchbar" onkeyup="search_animal()" type="text" name="search" placeholder="Search animals...">
+		<!-- demo list -->
+		<ul id="list" class="list-group">
+			<li class="animals list-group-item">Cat</li>
+			<li class="animals list-group-item">Dog</li>
+			<li class="animals list-group-item">Lion</li>
+			<li class="animals list-group-item">Tiger</li>
+			<li class="animals list-group-item">Baboon</li>
+			<li class="animals list-group-item">Whale</li>
+			<li class="animals list-group-item">Mouse</li>
+			<li class="animals list-group-item">Horse</li>
+			<li class="animals list-group-item">Donkey</li>
+			<!-- More list items -->
+		</ul>
+	</div>
+
+
+	<script type="text/javascript">
+		function search_animal(){
+			let input = document.getElementById('searchbar').value;
+			input = input.toLowerCase();
+			let x = document.getElementsByClassName('animals');
+
+			for(i = 0; i < x.length; i++){
+				if(!x[i].innerHTML.toLowerCase().includes(input)){
+					console.log(x);
+					x[i].style.display = "none";
+				}
+				else{
+					x[i].style.display = "list-item";
+				}
+			}
+		}
+	</script>
+</body>
+</html>

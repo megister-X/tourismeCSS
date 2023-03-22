@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Menu complexe</title>
+
+
+	<style type="text/css">
+		.popover{
+			position: relative;
+			display: grid;
+			place-items: center;
+			height: 72px;
+		}
+		
+		.popover > button{
+			position: relative;
+			display: grid;
+			place-items: center;
+			width: 40px;
+			height: 40px;
+			background: transparent;
+		}
+
+		.popover > button::before{
+			content: "";
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			scale: 0.25;
+			opacity: 0;
+			background: #f5f5f5;
+			transition: 0.2s;
+		}
+		.menu{
+			overflow-x: hidden;
+			overflow-y: auto;
+			position: absolute;
+			top: 64px;
+			right: -20px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-flow: max-content;
+			width: 270px;
+			max-height: 286px;
+			padding: 10px;
+			background: #ffffff;
+			border-radius: 8px;
+			border: 1px solid #ebebeb;
+			box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+			opacity: 0;
+			visibility: hidden;
+			transition: 0.3s;
+		}
+
+		.popover:hover > button::before{
+			scale: 1;
+			opacity: 1;
+		}
+		.menu::scrollbar{
+			width: 15px;
+		}
+		.menu::scrollbar-thumb{
+			background: #dadce0;
+			border-radius: 10px;
+			border: 4px solid transparent;
+			background-clip: padding-box;
+		}
+
+		.popover:hover > .menu{
+			opacity: 1;
+			visibility: visible;
+		}
+		
+		img{
+			width: 50px;
+			height: 50px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="popover">
+		<button class="materiel-symbols-outlined">
+			apps
+		</button>
+		<div class="menu">
+			<button>
+				<img src="images/favicon.png">
+				<span>Account</span>
+			</button>
+			<a href="#">marques</a>
+			<a href="#">Modèles</a>
+			<a href="#">Série</a>
+			<a href="#">Carosserie</a>
+			<a href="#">Carburant</a>
+			<a href="#">Portes</a>
+			<a href="#">Abs</a>
+			<a href="#">Clim</a>
+			<a href="#">Gps</a>
+			<a href="#">Intérieur</a>
+			<a href="#">Direction assistée</a>
+		</div>
+	</div>
+
+</body>
+</html>
