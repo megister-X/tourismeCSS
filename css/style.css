@@ -211,37 +211,51 @@ nav ul li a:active {
 
 /*   Header    */
 header{
-	position: relative;
 	width: 100%;
-	min-height: 250px;
+	min-height: 200px;
 	margin-top: 50px;
 }
-.logo{
-	height: 150px;
-	width: 50%;
-	justify-content: space-between;
-	margin: 6px ;
-}
-.logo figure{
-	width: 150px;
-	border-bottom: 2px solid var(--blue); 
+
+header.accueil{
+	display: flex;
+	flex-direction: column;
 }
 
+.logo{
+	min-height: 150px;
+	width: 100%;
+	justify-content: flex-start;
+	margin: 2px ;
+}
+
+.logo figure{
+	width: 150px;
+	height: 150px;
+/*	background-color: violet;*/
+	border-bottom: 2px solid var(--blue); 
+	border-radius: 12px;
+	margin: 12px;
+}
 .logo h1{
-	width: 400px;
-	font-size: 3rem;
+	min-width: 400px;
+	font-size: 6rem;
 /*	font-family: Tilt, Arial, Cursive;*/
 	font-family: 'Heebo', sans-serif;
 	text-align: center;
 	align-self: center;
+	margin-left: 12px;
 	color: #4b0082;
 	text-shadow: 0px 0px 2px hsl(200,100%,50%);
 }
+
 .text-accueil{
 	width: 100%;
 	margin: 12px 0;
 	background-color: orange;
-
+/*
+	display: none;
+	visibility: hidden;
+*/
 }
 
 
@@ -369,10 +383,143 @@ main.index section{
  }
 /*--------------------*/
 
+/*   images motions */
+
+.images--motion{
+	display: grid;
+	grid-template-columns: 1fr;
+	min-height: 500px;
+	gap: 12px;
+	margin: 12px 0;
+	overflow: hidden;
+	background: linear-gradient(to left, orange, skyblue);
+}
+.images__header--motion{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 40vh;
+	overflow: hidden;
+/*	background-color: coral;*/
+}
+.images__header--motion img{
+	position: absolute;
+	pointer-events: none;
+}
+img#avion{
+	width: 250px;
+	top: 20px;
+	left: 20px;
+}
+img#soleil{
+	width: 250px;
+	bottom: 20px;
+	right: 20px;
+}
+img#nuage1{
+	width: 250px;
+	top: 20px;
+	right: 20px;
+}
+img#nuage2{
+	width: 100px;
+	top: 200px;
+	left: 200px;
+}
+img#nuage3{
+	width: 150px;
+	top: 75px;
+	left: 450px;
+}
+img#nuage4{
+	width: 100px;
+	top: 5px;
+	left: 20px;
+}
+img#poisson1{
+	width: 100px;
+	bottom: 5px;
+	right: 5px;
+}
+img#poisson2{
+	width: 150px;
+	bottom: 40px;
+	left: 40px;
+}
+img#meduse{
+	width: 50px;
+	bottom: 20px;
+	right: 400px;
+}
+img#bulles{
+	width: 50px;
+	bottom: -5px;
+	left: 50%;
+}
+img#vague1,
+img#vague2{
+	width: 100%;
+	height: 200px;
+	bottom: 0;
+	right: 0;
+}
+
+
+img#vague1{
+	transition: 0.1s;
+	animation: vague1 0.2s ease infinite;
+}
+img#vague2{
+	transition: 0.5s;
+	animation: vague2 1s ease infinite;
+}
+
+@keyframes vague1{
+	0{
+		transform: translate(2px, -2px);
+	}
+	25%{
+		transform: translate(-4px, 4px);
+	}
+	50%{
+		transform: translate(2px, -2px);
+	}
+	75%{
+		transform: translate(4px, -6px);
+	}
+	100%{
+		transform: translate(-3px, 3px);
+	}
+}
+@keyframes vague2{
+	0{
+		transform: translate(-3px, 3px);
+	}
+	25%{
+		transform: translate(2px, -2px);
+	}
+	50%{
+		transform: translate(4px, -4px);
+	}
+	75%{
+		transform: translate(6px, -3px);
+	}
+	100%{
+		transform: translate(-2px, 2px);
+	}
+}
+
+
+.text--motion{
+	
+}
+/*-----------------------*/
+
 /*   Texte et image */
 .image-texte{
 	width: 100%;
-min-height: 400px;
+	min-height: 400px;
 }
 .image-texte__01{
 	display: flex;
