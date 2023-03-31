@@ -26,11 +26,21 @@
 :root {
   --blue: #6495ed;
   --white: #faf0e6;
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white:#ffffff;
+  --gryLight-1: #e4ebf5;
+  --gryLight-2: #c8d0e7;
+  --gryLight-3: #bec8e4;
+  --gryDark: #9baacf;
 }
 
 
 /*   Styles Généraux */
-  *{
+  *,
+  *::before,
+  *::after{
   	margin: 0;
   	padding: 0;
   	box-sizing: border-box;
@@ -1228,8 +1238,31 @@ menu.cat--container {
   background-color: whitesmoke;
   color: #4C42f2;
 }
+/**/
+.blog--contenu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--gryLight-1);
+	min-height: 100vh;
+	padding: 0 20px;
+}
+.constituant{
+	display: grid;
+	grid-template-columns: 20.4rem;
+	grid-template-rows: repeat(auto-fit, min-content);
+	grid-column-gap: 0.5rem;
+	grid-row-gap: 0.5rem;
+	align-items: center;
+	width: 40rem;
+	min-height: 75rem;
+	border-radius: 3rem;
+	box-shadow: 0.8rem 0.8rem 1.4rem var(--gryLight-2), -0.2rem -0.2rem 1.8rem var(--white);
+	padding: 4rem;
+}
 
-
+/**/
 nav.categories {
 	position: relative;
   background-color: #c1c1c550;
@@ -1327,6 +1360,7 @@ main.q-r{
 
 /*   Contact    */
 .contact__body{
+	position: relative;
 	background-image: url(../images/maldives.jpg);
 	background-repeat: no-repeat;
 	background-clip: border-box;
@@ -1336,6 +1370,62 @@ main.contact{
 	width: 100%;
 	min-height: 100%;
 }
+
+.contact .contenu{
+	position: absolute;
+	top: 10%;
+	left: 90%;
+	transform: translate(-50%,-50%);
+	display: block;
+	z-index: 999;
+}
+.contact .moyi{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: #fcd25b;
+	border: 3px solid #fcd25b;
+	overflow: hidden;
+	animation: jourAnuit 10s infinite 1.5s;
+}
+.contact .elili{
+	height: 170px;
+	width: 170px;
+	border-radius: 50%;
+	background-color: #fff;
+	top: -5px;
+	left: 0px;
+	animation: mouvementOmbre 10s infinite 1.5s;
+}
+
+@keyframes mouvementOmbre{
+	0%{
+		transform: translateX(150px);
+		background-color: #fcd25b;
+	}
+	50%{
+		transform: translateX(-10px);
+		background-color: #fcd25b;
+	}
+	100%{
+		transform: translateX(-170px);
+		background-color: #fcd25b;
+	}
+}
+@keyframes jourAnuit{
+	0%{
+		background-color: white;
+	}
+	50%{
+		background-color: black;
+	}
+	100%{
+		background-color: white;
+	}
+}
+
+
+
 .contact section{
 	min-width: 100%;
 	min-height: 200px;

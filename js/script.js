@@ -43,3 +43,4 @@ function fonctResponsive() {
     x.className = "navigation";
   }
 }
+
