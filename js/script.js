@@ -4,6 +4,7 @@
 // let text = document.getElementById('text');
 // let text = document.getElementById('text');
 let soleil = document.getElementById('soleil');
+let soleil2 = document.getElementById('soleil2');
 let nuage1 = document.getElementById('nuage1');
 let nuage2 = document.getElementById('nuage2');
 let avion = document.getElementById('avion');
@@ -19,7 +20,8 @@ window.addEventListener('scroll', ()=>{
   let valuex = window.scrollX;
 
   soleil.style.bottom = value * 0.25 + 'px';
-  nuage1.style.right = value * -0.05 + 'px';
+  soleil2.style.bottom = value * -0.08 + 'px';
+  nuage1.style.right = value * -0.25 + 'px';
   nuage2.style.left = value * 0.08 + 'px';
   nuage3.style.left = value * 0.15 + 'px';
   nuage4.style.left = value * 0.08 + 'px';
