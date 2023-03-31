@@ -1648,7 +1648,8 @@ main .tricar article{
 }
 .quadra--card__img div{
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
+	border-radius: 12px;
 }
 /*   footer   */
 footer div{
