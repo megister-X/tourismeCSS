@@ -224,6 +224,7 @@ header{
 	width: 100%;
 	min-height: 200px;
 	margin-top: 50px;
+	overflow: hidden;
 }
 
 header.accueil{
